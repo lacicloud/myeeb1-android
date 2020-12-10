@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.mWebView.setWebViewClient(new WebViewClient(){
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (url != null && !(url.contains("app.bissc.net")) && (url.startsWith("http://") || url.startsWith("https://"))) {
+                if (url != null && !(url.contains("app.13stars.eu")) && (url.startsWith("http://") || url.startsWith("https://"))) {
                     view.getContext().startActivity(
                             new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
                     return true;
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             //toast.setGravity(17, 0, 0);
             //toast.show();
         }
-        this.mWebView.loadUrl("https://app.bissc.net");
+        this.mWebView.loadUrl("https://app.13stars.eu");
     }
 
     @Override
